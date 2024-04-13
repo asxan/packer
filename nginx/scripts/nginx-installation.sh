@@ -4,5 +4,9 @@
 
 sudo yum -y update
 sudo yum install -y epel-release
+echo "Install nginx"
 sudo yum install -y nginx
+echo "Start nginx"
 sudo systemctl start nginx
+echo "Enable nginx to start after the system started"
+sudo systemctl enable nginx
